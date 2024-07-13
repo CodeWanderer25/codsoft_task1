@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    /* background-color: #1e1e1e; */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+
+
+}
+
+.cta {
+    background-color: #f39c12;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #e67e22;
+}
+
+#hero {
+    background: url('Tour du Mont-Blanc Self Guided Trek - 7 days.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 5px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #f39c12;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #f39c12;
+    color: #f39c12;
+}
+
+.btn-secondary:hover {
+    background-color: #f39c12;
+    color: #ffffff;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+#featured-destinations {
+    background-color: #1e1e1e;
+    padding: 50px 0;
+}
+
+#featured-destinations h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.destinations-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destination {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.destination img {
+    width: 60%;
+    height: 18rem;
+    border-bottom: 5px solid #f39c12;
+    border-radius: 10%;
+}
+
+/* .destination .tk ,{
+    height:18rem;
+}
+.destination .ny{
+    height:18rem;
+} */
+
+.destination h3 {
+    font-size: 1.8em;
+    margin: 20px 0 10px;
+}
+
+.destination p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.destination .btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.destination:hover {
+    transform: scale(1.05);
+}
+
+#gallery {
+    background-color: #121212;
+    padding: 20px 0;
+}
+
+#gallery h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 24rem;
+    transition: transform 0.3s, filter 0.3s;
+    border: 5px solid #1e1e1e;
+    
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+}
+
+#tour-packages {
+    background-color: #121212;
+    padding: 10px 0;
+    color: #ffffff;
+}
+
+.tour-packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tour-package {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+}
+
+.tour-package img {
+    width: 60%;
+    height: 18rem;
+    border-bottom: 5px solid #f39c12;
+    border-radius: 10%;
+
+}
+
+.tour-package h3 {
+    font-size: 1.8em;
+    margin: 20px 0 10px;
+}
+
+#tour-packages h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.tour-package p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: block;
+    font-size: 1.2em;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #f39c12;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #f39c12;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+    text-align: center;
+}
